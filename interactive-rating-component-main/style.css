@@ -1,0 +1,116 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --mainColor: hsl(25, 97%, 53%);
+}
+.selected{
+  background: var(--mainColor)!important;
+  color:white!important;
+}
+body{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: black;
+}
+main, .thxContainer{
+  background: #212832 ;
+  padding: 20px;
+  color: #fff;
+  border-radius: 20px;
+  width: 350px;
+  height: 370px;
+  box-shadow: 0 0  20px 0 black;
+}
+main .icon{
+  background: #1d242c;
+  padding: 10px;
+  width: fit-content;
+  border-radius: 50%;
+  margin: 10px 0;
+}
+main p{
+  color: #838c95;
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 30px;
+}
+main .ratingContainer{
+  display: flex;
+  justify-content: space-between;
+}
+main .ratingContainer .circle{
+  background: #262f38 ;
+  padding: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #838c95;
+  transition: .6s;
+}
+main .ratingContainer .circle:hover{
+  background: silver;
+  color: black;
+}
+main .submitBtn{
+  background: var(--mainColor);
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: .6s;
+}
+.submitBtn:hover{
+  color: var(--mainColor);
+  background:white;
+}
+.thxContainer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+.thxContainer .rating{
+  background: #1d242c ;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: var(--mainColor);
+}
+.thxContainer p{
+  text-align: center;
+  font-size: 14px;
+  color: #838c95;
+  
+  
+}
+.unvisible{
+  display: none!important;
+}
+.visible{
+  display: block;
+  display: flex!important;
+}
+@media screen and (max-width: 664px){
+  main , .thxContainer{
+    width: 330px;
+    height: 400px;
+    font-size: 20px
+  }
+}
+.active{
+  background-color: var(--mainColor)!important;
+  color: white!important;
+}
