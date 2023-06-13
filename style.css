@@ -17,6 +17,8 @@ body{
   align-items: center;
   height: 100vh;
   background: black;
+  font-family: 'Overpass', 'sans-serif';
+  
 }
 main, .thxContainer{
   background: #212832 ;
