@@ -18,6 +18,7 @@ body{
   height: 100vh;
   background: black;
   font-family: 'Overpass', 'sans-serif';
+  font-weight: 400;
   
 }
 main, .thxContainer{
@@ -35,6 +36,9 @@ main .icon{
   width: fit-content;
   border-radius: 50%;
   margin: 10px 0;
+}
+h1{
+font-weight:700;
 }
 main p{
   color: #838c95;
@@ -72,6 +76,7 @@ main .submitBtn{
   border-radius: 20px;
   margin-top: 30px;
   transition: .6s;
+  font-weight: 700;
 }
 .submitBtn:hover{
   color: var(--mainColor);
